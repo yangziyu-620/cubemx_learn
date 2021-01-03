@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"led1_gpio\startup_stm32f407xx.o"
+"led1_gpio\main.o"
+"led1_gpio\gpio.o"
+"led1_gpio\stm32f4xx_it.o"
+"led1_gpio\stm32f4xx_hal_msp.o"
+"led1_gpio\stm32f4xx_hal_tim.o"
+"led1_gpio\stm32f4xx_hal_tim_ex.o"
+"led1_gpio\stm32f4xx_hal_rcc.o"
+"led1_gpio\stm32f4xx_hal_rcc_ex.o"
+"led1_gpio\stm32f4xx_hal_flash.o"
+"led1_gpio\stm32f4xx_hal_flash_ex.o"
+"led1_gpio\stm32f4xx_hal_flash_ramfunc.o"
+"led1_gpio\stm32f4xx_hal_gpio.o"
+"led1_gpio\stm32f4xx_hal_dma_ex.o"
+"led1_gpio\stm32f4xx_hal_dma.o"
+"led1_gpio\stm32f4xx_hal_pwr.o"
+"led1_gpio\stm32f4xx_hal_pwr_ex.o"
+"led1_gpio\stm32f4xx_hal_cortex.o"
+"led1_gpio\stm32f4xx_hal.o"
+"led1_gpio\stm32f4xx_hal_exti.o"
+"led1_gpio\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "LED1_gpio\LED1_gpio.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED1_gpio.map" -o LED1_gpio\LED1_gpio.axf
