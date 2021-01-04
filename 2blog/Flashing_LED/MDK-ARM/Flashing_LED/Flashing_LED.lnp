@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"flashing_led\startup_stm32f407xx.o"
+"flashing_led\main.o"
+"flashing_led\gpio.o"
+"flashing_led\stm32f4xx_it.o"
+"flashing_led\stm32f4xx_hal_msp.o"
+"flashing_led\stm32f4xx_hal_tim.o"
+"flashing_led\stm32f4xx_hal_tim_ex.o"
+"flashing_led\stm32f4xx_hal_rcc.o"
+"flashing_led\stm32f4xx_hal_rcc_ex.o"
+"flashing_led\stm32f4xx_hal_flash.o"
+"flashing_led\stm32f4xx_hal_flash_ex.o"
+"flashing_led\stm32f4xx_hal_flash_ramfunc.o"
+"flashing_led\stm32f4xx_hal_gpio.o"
+"flashing_led\stm32f4xx_hal_dma_ex.o"
+"flashing_led\stm32f4xx_hal_dma.o"
+"flashing_led\stm32f4xx_hal_pwr.o"
+"flashing_led\stm32f4xx_hal_pwr_ex.o"
+"flashing_led\stm32f4xx_hal_cortex.o"
+"flashing_led\stm32f4xx_hal.o"
+"flashing_led\stm32f4xx_hal_exti.o"
+"flashing_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Flashing_LED\Flashing_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Flashing_LED.map" -o Flashing_LED\Flashing_LED.axf
