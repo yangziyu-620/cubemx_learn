@@ -1,9 +1,9 @@
 # cubemx学习
 
 ## 系列文章目录
-### 0. [前期的准备](https://blog.csdn.net/programmaker3/article/details/112058912)  
+### 0.  [前期的准备](https://blog.csdn.net/programmaker3/article/details/112058912)  
 ### 1.  [点亮 LED](https://blog.csdn.net/programmaker3/article/details/112106512)
-### 2. 闪烁 LED
+### 2.  [闪烁 LED](https://blog.csdn.net/programmaker3/article/details/112168795)
 ### 3. 定时器闪烁LED
 ### 4. 未完待续…
 
