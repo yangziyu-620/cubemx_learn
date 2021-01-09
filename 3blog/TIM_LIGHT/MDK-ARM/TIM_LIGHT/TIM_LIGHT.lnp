@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"tim_light\startup_stm32f407xx.o"
+"tim_light\main.o"
+"tim_light\gpio.o"
+"tim_light\tim.o"
+"tim_light\stm32f4xx_it.o"
+"tim_light\stm32f4xx_hal_msp.o"
+"tim_light\stm32f4xx_hal_tim.o"
+"tim_light\stm32f4xx_hal_tim_ex.o"
+"tim_light\stm32f4xx_hal_rcc.o"
+"tim_light\stm32f4xx_hal_rcc_ex.o"
+"tim_light\stm32f4xx_hal_flash.o"
+"tim_light\stm32f4xx_hal_flash_ex.o"
+"tim_light\stm32f4xx_hal_flash_ramfunc.o"
+"tim_light\stm32f4xx_hal_gpio.o"
+"tim_light\stm32f4xx_hal_dma_ex.o"
+"tim_light\stm32f4xx_hal_dma.o"
+"tim_light\stm32f4xx_hal_pwr.o"
+"tim_light\stm32f4xx_hal_pwr_ex.o"
+"tim_light\stm32f4xx_hal_cortex.o"
+"tim_light\stm32f4xx_hal.o"
+"tim_light\stm32f4xx_hal_exti.o"
+"tim_light\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TIM_LIGHT\TIM_LIGHT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM_LIGHT.map" -o TIM_LIGHT\TIM_LIGHT.axf
