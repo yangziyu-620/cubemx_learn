@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"servo\startup_stm32f407xx.o"
+"servo\main.o"
+"servo\gpio.o"
+"servo\tim.o"
+"servo\stm32f4xx_it.o"
+"servo\stm32f4xx_hal_msp.o"
+"servo\stm32f4xx_hal_tim.o"
+"servo\stm32f4xx_hal_tim_ex.o"
+"servo\stm32f4xx_hal_rcc.o"
+"servo\stm32f4xx_hal_rcc_ex.o"
+"servo\stm32f4xx_hal_flash.o"
+"servo\stm32f4xx_hal_flash_ex.o"
+"servo\stm32f4xx_hal_flash_ramfunc.o"
+"servo\stm32f4xx_hal_gpio.o"
+"servo\stm32f4xx_hal_dma_ex.o"
+"servo\stm32f4xx_hal_dma.o"
+"servo\stm32f4xx_hal_pwr.o"
+"servo\stm32f4xx_hal_pwr_ex.o"
+"servo\stm32f4xx_hal_cortex.o"
+"servo\stm32f4xx_hal.o"
+"servo\stm32f4xx_hal_exti.o"
+"servo\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "servo\servo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "servo.map" -o servo\servo.axf

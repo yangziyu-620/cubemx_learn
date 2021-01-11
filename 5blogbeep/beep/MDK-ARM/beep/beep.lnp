@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"beep\startup_stm32f407xx.o"
+"beep\main.o"
+"beep\gpio.o"
+"beep\tim.o"
+"beep\stm32f4xx_it.o"
+"beep\stm32f4xx_hal_msp.o"
+"beep\stm32f4xx_hal_tim.o"
+"beep\stm32f4xx_hal_tim_ex.o"
+"beep\stm32f4xx_hal_rcc.o"
+"beep\stm32f4xx_hal_rcc_ex.o"
+"beep\stm32f4xx_hal_flash.o"
+"beep\stm32f4xx_hal_flash_ex.o"
+"beep\stm32f4xx_hal_flash_ramfunc.o"
+"beep\stm32f4xx_hal_gpio.o"
+"beep\stm32f4xx_hal_dma_ex.o"
+"beep\stm32f4xx_hal_dma.o"
+"beep\stm32f4xx_hal_pwr.o"
+"beep\stm32f4xx_hal_pwr_ex.o"
+"beep\stm32f4xx_hal_cortex.o"
+"beep\stm32f4xx_hal.o"
+"beep\stm32f4xx_hal_exti.o"
+"beep\system_stm32f4xx.o"
+"beep\buzzer.o"
+--library_type=microlib --strict --scatter "beep\beep.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "beep.map" -o beep\beep.axf
