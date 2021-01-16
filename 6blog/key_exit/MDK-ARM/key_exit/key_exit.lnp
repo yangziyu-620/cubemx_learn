@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"key_exit\startup_stm32f407xx.o"
+"key_exit\main.o"
+"key_exit\gpio.o"
+"key_exit\stm32f4xx_it.o"
+"key_exit\stm32f4xx_hal_msp.o"
+"key_exit\stm32f4xx_hal_tim.o"
+"key_exit\stm32f4xx_hal_tim_ex.o"
+"key_exit\stm32f4xx_hal_rcc.o"
+"key_exit\stm32f4xx_hal_rcc_ex.o"
+"key_exit\stm32f4xx_hal_flash.o"
+"key_exit\stm32f4xx_hal_flash_ex.o"
+"key_exit\stm32f4xx_hal_flash_ramfunc.o"
+"key_exit\stm32f4xx_hal_gpio.o"
+"key_exit\stm32f4xx_hal_dma_ex.o"
+"key_exit\stm32f4xx_hal_dma.o"
+"key_exit\stm32f4xx_hal_pwr.o"
+"key_exit\stm32f4xx_hal_pwr_ex.o"
+"key_exit\stm32f4xx_hal_cortex.o"
+"key_exit\stm32f4xx_hal.o"
+"key_exit\stm32f4xx_hal_exti.o"
+"key_exit\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "key_exit\key_exit.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "key_exit.map" -o key_exit\key_exit.axf
