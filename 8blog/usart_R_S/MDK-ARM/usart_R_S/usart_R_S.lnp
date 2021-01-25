@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"usart_r_s\startup_stm32f407xx.o"
+"usart_r_s\main.o"
+"usart_r_s\gpio.o"
+"usart_r_s\usart.o"
+"usart_r_s\stm32f4xx_it.o"
+"usart_r_s\stm32f4xx_hal_msp.o"
+"usart_r_s\stm32f4xx_hal_tim.o"
+"usart_r_s\stm32f4xx_hal_tim_ex.o"
+"usart_r_s\stm32f4xx_hal_uart.o"
+"usart_r_s\stm32f4xx_hal_rcc.o"
+"usart_r_s\stm32f4xx_hal_rcc_ex.o"
+"usart_r_s\stm32f4xx_hal_flash.o"
+"usart_r_s\stm32f4xx_hal_flash_ex.o"
+"usart_r_s\stm32f4xx_hal_flash_ramfunc.o"
+"usart_r_s\stm32f4xx_hal_gpio.o"
+"usart_r_s\stm32f4xx_hal_dma_ex.o"
+"usart_r_s\stm32f4xx_hal_dma.o"
+"usart_r_s\stm32f4xx_hal_pwr.o"
+"usart_r_s\stm32f4xx_hal_pwr_ex.o"
+"usart_r_s\stm32f4xx_hal_cortex.o"
+"usart_r_s\stm32f4xx_hal.o"
+"usart_r_s\stm32f4xx_hal_exti.o"
+"usart_r_s\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "usart_R_S\usart_R_S.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "usart_R_S.map" -o usart_R_S\usart_R_S.axf
