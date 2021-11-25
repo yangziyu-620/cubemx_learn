@@ -62,6 +62,7 @@ ProjectManager.PreviousToolchain=
 ProjectManager.ProjectBuild=false
 ProjectManager.ProjectFileName=pwm_led.ioc
 ProjectManager.ProjectName=pwm_led
+ProjectManager.RegisterCallBack=
 ProjectManager.StackSize=0x400
 ProjectManager.TargetToolchain=MDK-ARM V5.27
 ProjectManager.ToolChainLocation=

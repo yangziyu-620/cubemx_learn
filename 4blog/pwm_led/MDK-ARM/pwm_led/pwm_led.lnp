@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp.sp
+--cpu=Cortex-M4.fp
 "pwm_led\startup_stm32f407xx.o"
 "pwm_led\main.o"
 "pwm_led\gpio.o"
