@@ -82,6 +82,7 @@ ProjectManager.PreviousToolchain=
 ProjectManager.ProjectBuild=false
 ProjectManager.ProjectFileName=usart_R_S.ioc
 ProjectManager.ProjectName=usart_R_S
+ProjectManager.RegisterCallBack=
 ProjectManager.StackSize=0x400
 ProjectManager.TargetToolchain=MDK-ARM V5.27
 ProjectManager.ToolChainLocation=
